@@ -1,0 +1,86 @@
+我: 不然扣你绩效 :
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>弹窗</title>
+		<style type="text/css">
+			* {
+				margin: 0px;
+				padding: 0px;
+			}
+			
+			html body {
+				width: 100%;
+				height: 100%;
+			}
+			
+			.auto {
+				width: 100px;
+				margin: 100px auto;
+			}
+			
+			#btn {
+				width: 100px;
+				height: 40px;
+				background: none;
+				background: red;
+				color: #fff;
+				border: 1px solid red;
+				outline: 0;
+			}
+			
+			.delog {
+				position: fixed;
+				width: 100%;
+				height: 100%;
+				top: 0;
+				left: 0;
+				background-color: rgba(0, 0, 0, .5);
+			}
+			
+			.none {
+				display: none;
+			}
+			
+			.pop-up {
+				width: 400px;
+				height: 200px;
+				background: white;
+				border: 1px solid red;
+				border-radius: 8px;
+				z-index: 999;
+				position: absolute;
+				margin: auto;
+				left: 0;
+				top: 0;
+				bottom: 0;
+				right: 0;
+				text-align: center;
+				line-height: 200px;
+				font-size: 30px;
+			}
+		</style>
+		<script type="text/javascript">
+			window.onload = function() {
+				var btn = document.getElementById("btn");
+				var delog = document.getElementById("delog");
+				var popUp = document.getElementById("popUp");
+				btn.onclick = function() {
+					delog.className = "delog";
+					popUp.className = "pop-up";
+				}
+			}
+		</script>
+	</head>
+
+	<body>
+		<div class="auto">
+			<button id="btn">对话框</button>
+		</div>
+		<div class="delog none" id="delog"></div>
+		<div class="pop-up none" id="popUp">自定义的弹框</div>
+	</body>
+
+</html>
