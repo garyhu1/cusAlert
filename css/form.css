@@ -1,0 +1,40 @@
+#container {
+	width: 800px;
+	height: 900px;
+	border: 1px solid grey;
+	margin: 10px auto;
+	position: relative;
+}
+
+/*单条表单*/
+#single-form {
+	width: 500px;
+	margin: 10px auto;
+	border: 1px solid darkseagreen;
+	text-align: center;
+}
+
+/*信息不全时的状态*/
+.red-border {
+	border: none;
+	border: 1px solid red;
+}
+
+.red-text {
+	color: red;
+}
+
+/*提交按钮*/
+#submit {
+	width: 100px;
+	height: 40px;
+	line-height: 40px;
+	border: none;
+	border: 1px solid darkgreen;
+	background: darkolivegreen;
+	color: #fff;
+	position: absolute;
+	bottom: 10px;
+	border-radius: 5px;
+	left: 350px;
+}
